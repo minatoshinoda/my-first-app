@@ -22,6 +22,8 @@ pip install -r requirements.txt
 
 [Obtain an API Key](https://www.alphavantage.co/support/#api-key) from AlphaVantage.
 
+TODO include instructions here for signing up for email sending platform 
+
 Create a ".env" file and add contents like the following (using your own AlphaVantage API Key):
 
 ```sh
@@ -49,3 +51,4 @@ Run the stocks report:
 ```sh
 python app/stocks.py
 ```
+
