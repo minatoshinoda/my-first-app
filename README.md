@@ -5,13 +5,13 @@
 Create a virtual environment (first time only):
 
 ```sh
-conda create -n reports-env-2024 python=3.10
+conda create -n reports-env-2 python=3.10
 ```
 
 Activate the environment (whenever you come back to this project):
 
 ```sh
-conda activate reports-env-2024
+conda activate reports-env-2
 ```
 
 Install packages:
