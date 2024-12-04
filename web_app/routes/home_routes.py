@@ -1,5 +1,3 @@
-# this is the "web_app/routes/home_routes.py" file...
-
 from flask import Blueprint, request, render_template
 
 home_routes = Blueprint("home_routes", __name__)
@@ -37,4 +35,3 @@ def hello_world():
 
     #return message
     return render_template("hello.html", message=message, x=x, y=20)
-
