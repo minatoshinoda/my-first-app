@@ -7,9 +7,7 @@ from statistics import mean
 import requests
 from plotly.express import line
 
-
 from app.alpha_service import API_KEY
-
 
 def fetch_unemployment_json():
 
@@ -38,7 +36,15 @@ def fetch_unemployment_json():
 
     return data
 
+def format_pct(my_number):
+    """Formats a percentage number like 3.6555554 as percent, rounded to two decimal places.
 
+    Params:
+        my_number (float): a percentage like 3.6555554
+
+    Returns (str) like '3.66%'
+    """
+    return f"{my_number:.2f}%"
 
 if __name__ == "__main__":
 
@@ -83,3 +89,5 @@ if __name__ == "__main__":
 
     fig = line(x=dates, y=rates, title="United States Unemployment Rate over time", labels= {"x": "Month", "y": "Unemployment Rate"})
     fig.show()
+
+    
